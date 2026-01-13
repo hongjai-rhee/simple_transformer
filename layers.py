@@ -7,6 +7,10 @@ Original file is located at
     https://colab.research.google.com/drive/1VTOTl2wIDtpohAiJC9-Vp365fWdRTNwB
 """
 
+import tensorflow as tf
+from tensorflow.keras import layers
+from tensorflow.keras.layers import Layer, Embedding
+
 class PositionalEmbedding(Layer):
     def __init__(self, input_dim, output_dim, max_len=LAG, **kwargs):
         super().__init__(**kwargs)
